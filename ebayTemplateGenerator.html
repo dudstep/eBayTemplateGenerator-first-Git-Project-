@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- link stylesheets, javascript and set viewport size -->
+    <head>
+      <meta name="viewport" 
+	  content="width=device-width, user-scalable='yes', initial-scale=1.0">
+	  <link rel="Stylesheet" 
+	  type="text/css" href="eBaytemplate.css">
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+	
+	<!-- set main body of page in grid container, using flex-box to set a variable amount of columns according to needs-->
+	<body>
+	  <div class="grid-container" id="quasi-body">
+	  <!-- header-->
+	    <div class="grid-row-header grid-row flex-row" id ="row-1">
+		  <div class="grid-col grid-col-1 flex-row" id="grid-row-1-col-1">
+		     <div class="menu-button-wrap flex-column" id="menu-button-wrap">
+			   <div class="menu-icon flex-column" id="menu-icon">
+			     <div class="menu-icon-line"></div>
+			     <div class="menu-icon-line"></div>
+			     <div class="menu-icon-line"></div>
+			   </div> 
+			 </div>  
+			 <div class="search-button-wrap flex-row" id="search-button-wrap">
+			   <img class="search-button" src="Images/iconfinder_icon-111-search_314478.png">
+			 </div>  
+		  </div>
+		  <!-- hidden --><!-- sign in and register column for desktop and large tablet screens-->
+		  <div class="grid-col grid-col-2 flex-row" id="grid-row-1-col-2">
+		  	<div class="sign-in-register-wrap flex-row">
+			  <img id="sign-in-icon" src="Images/37c273428b.png">
+			  <div id="sign-in-register-text" class="flex-row">
+			    <a href="sign_in_page.html" class="sign-in-link flex-row">
+			      SIGN IN&nbsp 
+				</a>
+			    |&nbsp 
+			    <a href="registration_page.html" class="register-link flex-row">
+				  REGISTER
+				</a>
+			  </div>
+			</div>
+			<div class="search-button-wrap flex-row" id="desktop-search-button-wrap">
+			  <input id="search-input" placeholder="search" type="text">
+			    <div id="search-button-2-wrap" class="flex-row">
+				  <img class="search-button" src="Images/iconfinder_icon-111-search_314478.png">
+				</div>
+			</div>
+		  </div>	
+		  <!-- logo column-->
+		  <div class="grid-col grid-col-3 flex-row" id="grid-row-1-col-3">
+		    <div class="logo-wrap flex-row" id="header-logo-wrap">
+			  <a href="new_homepage.html" class="homepage-link flex-row" id="logo-link">
+			    <img src="Images/Retrod0g.png" alt="logo" class="logo">
+			  </a>	
+			</div>
+		  </div>
+		  <!-- end of logo column-->
+		  <!-- start of payment logo column -->
+		  <div class="grid-col grid-col-4 flex-row" id="grid-row-1-col-4">
+		    <img src="Images/bitcoin.png" class="pay-img"><img src="Images/PayPal_logo.png" class="pay-img">
+		  </div>
+		  <!-- end of payment logo column -->
+		  <!-- start of basket column-->
+		  <div class="grid-col grid-col-5 flex-column" id="grid-row-1-col-5">
+		  	<div class="basket-wrap flex-row" id="basket-wrap">
+			  <div class="basket-icon-wrap flex-row">
+			    <img class="basket-icon" src="Images/Shopping_cart.png" alt="basket">
+		      </div>
+			</div>  
+		  </div>
+		  <!-- end of basket column-->
+        </div>
+		<!-- row 2 only viewable on mobile devices and some tablets(see media queries)-->
+		<div class="grid-row flex-column" id ="row-2">
+		  <div id="dropdown-header" class="flex-row">
+		    <div class="sign-in-register-wrap flex-row" id="sign-in-register-wrap-1">
+			  <img class="sign-in-icon" id="sign-in-icon-1" src="Images/37c273428b.png">
+			  <div class="sign-in-register-text flex-row" id="sign-in-register-text-1">
+			    <a href="sign_in_page.html" class="sign-in-link flex-row">
+			      SIGN IN&nbsp 
+				</a>
+			    |&nbsp 
+			    <a href="registration_page.html" class="register-link flex-row">
+				  REGISTER
+				</a>
+			  </div>
+			</div>
+			<div class="search-button-wrap flex-row" id="mobile-search-button-wrap">
+			  <input id="search-input-1" placeholder="search" type="text">
+			    <div id="search-button-1-wrap" class="flex-row">
+				  <img class="search-button" src="Images/iconfinder_icon-111-search_314478.png">
+				</div>
+			</div>
+		  </div>
+		  <div class="grid-col grid-col-1" id="grid-row-2-col-1">
+		    <ul class="hid-dd-menu flex-column" id="dd-menu">
+			  <div class="dd-button-wrap flex-row" id="dd-button1-wrap">
+			    <li class="parent-head" id="head-1">PLAYSTATION
+				  <button class="expand-button">+</button>
+			  </div>
+			    <ul class="child-list flex-column" id="child-list-1">
+                <li class="child-item child-1 flex-row" id="child-1-item-1">Playstation 4</li>
+				<li class="child-item child-1 flex-row" id="child-1-item-2">Games</li>
+				<li class="child-item child-1 flex-row" id="child-1-item-3">Controllers</li>
+				<li class="child-item child-1 flex-row" id="child-1-item-4">Accessories</li>
+			  </ul>
+		      </li>
+			  <div class="dd-button-wrap flex-row" id="dd-button2-wrap"><li class="parent-head" id="head-2">XBOX<button class="expand-button">+</button></div>
+			    <ul class="child-list flex-column" id="child-list-2">
+                  <li class="child-item child-2 flex-row" id="child-2-item-1">Xbox One</li>
+				  <li class="child-item child-2 flex-row" id="child-2-item-2">Games</li>
+				  <li class="child-item child-2 flex-row" id="child-2-item-3">Controllers</li>
+				  <li class="child-item child-2 flex-row" id="child-2-item-4">Accessories</li>
+				</ul>
+		      </li>
+			  <div class="dd-button-wrap flex-row" id="dd-button3-wrap"><li class="parent-head" id="head-3">XBOX<button class="expand-button">+</button></div>
+			    <ul class="child-list flex-column" id="child-list-3">
+                  <li class="child-item child-3 flex-row" id="child-3-item-1">Xbox One</li>
+				  <li class="child-item child-3 flex-row" id="child-3-item-2">Games</li>
+				  <li class="child-item child-3 flex-row" id="child-3-item-3">Controllers</li>
+				  <li class="child-item child-3 flex-row" id="child-3-item-4">Accessories</li>
+				</ul>
+		      </li>
+			</ul>
+		  </div>
+		</div>
+		<!-- row 3: desktop category menus-->
+		<div class="grid-row flex-row" id ="row-3">
+		  <div class="grid-col grid-col-1 grid-row-3-col" id="grid-row-3-col-1">
+		    <div class="dt-dd-but flex-row" id="dt-dd-cat1-but">PLAYSTATION</div>
+			  <ul class="dt-dd-menu dt-dd-menu-cat1 flex-column" id="dt-dd-menu-cat1">
+			    <li class="dt-dd-menu-el dt-dd-menu1-el dt-dd-menu-el1" id="dt-dd-menu1-el1"><a href="">PLAYSTATION 4</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu1-el" id="dt-dd-menu1-el2"><a href="">GAMES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu1-el" id="dt-dd-menu1-el3"><a href="New_Store_Page.html">CONTROLLERS</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu1-el" id="dt-dd-menu1-el4"><a href="">ACCESSORIES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu1-el dt-dd-last-el" id="dt-dd-menu1-el4"><a href="">OTHER CONSOLES AND </a></li>
+			  </ul>	
+		  </div>	
+		  <div class="grid-col grid-col-2 grid-row-3-col" id="grid-row-3-col-2">
+		    <div class="dt-dd-but flex-row" id="dt-dd-cat2-but">XBOX</div>
+			  <ul class="dt-dd-menu flex-column" id="dt-dd-menu-cat2">
+			    <li class="dt-dd-menu-el dt-dd-menu2-el" id="dt-dd-menu2-el1"><a href="">XBOX ONE</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu2-el" id="dt-dd-menu2-el2"><a href="">GAMES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu2-el" id="dt-dd-menu2-el3"><a href="">CONTROLLERS</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu2-el dt-dd-last-el" id="dt-dd-menu2-el4"><a href="">ACCESSORIES</a></li>
+			  </ul>	
+		  </div>
+		  <div class="grid-col grid-col-3 grid-row-3-col" id="grid-row-3-col-3">
+		  	<div class="dt-dd-but flex-row" id="dt-dd-cat3-but">NINTENDO</div>
+			  <ul class="dt-dd-menu flex-column" id="dt-dd-menu-cat3">
+			    <li class="dt-dd-menu-el dt-dd-menu3-el" id="dt-dd-menu3-el1"><a href="">SWITCH</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu3-el" id="dt-dd-menu3-el2"><a href="">GAMES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu3-el" id="dt-dd-menu3-el3"><a href="">CONTROLLERS</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu3-el dt-dd-last-el" id="dt-dd-menu3-el4"><a href="">ACCESSORIES</a></li>
+			  </ul>	
+		  </div>
+		  <div class="grid-col grid-col-4 grid-row-3-col" id="grid-row-3-col-4">
+		  	<div class="dt-dd-but flex-row" id="dt-dd-cat4-but">MERCHANDISE</div>
+			  <ul class="dt-dd-menu flex-column" id="dt-dd-menu-cat4">
+			    <li class="dt-dd-menu-el dt-dd-menu4-el" id="dt-dd-menu4-el1"><a href="">CLOTHES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu4-el" id="dt-dd-menu4-el2"><a href="">GAMING ACCESSORIES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu4-el" id="dt-dd-menu4-el3"><a href="">COMPUTER ACCESSORIES</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu4-el dt-dd-last-el" id="dt-dd-menu4-el4"><a href="">OTHER</a></li>
+			  </ul>	
+		  </div>
+		  <div class="grid-col grid-col-5 grid-row-3-col" id="grid-row-3-col-5">
+		    <div class="dt-dd-but flex-row" id="dt-dd-cat5-but">PRE-OWNED</div>
+			  <ul class="dt-dd-menu flex-column" id="dt-dd-menu-cat5">
+			    <li class="dt-dd-menu-el dt-dd-menu5-el" id="dt-dd-menu5-el1"><a href="">PS4</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu5-el" id="dt-dd-menu5-el2"><a href="">XBOX ONE</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu5-el" id="dt-dd-menu5-el3"><a href="">SWITCH</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu5-el dt-dd-last-el" id="dt-dd-menu5-el4"><a href="">RETRO/OTHER</a></li>
+			  </ul>
+		  </div>
+		  <div class="grid-col grid-col-6 grid-row-3-col" id="grid-row-3-col-6">
+		  	<div class="dt-dd-but flex-row" id="dt-dd-cat6-but">COMING SOON</div>
+			  <ul class="dt-dd-menu flex-column" id="dt-dd-menu-cat6">
+			    <li class="dt-dd-menu-el dt-dd-menu6-el" id="dt-dd-menu6-el1"><a href="">COMING SOON 1</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu6-el" id="dt-dd-menu6-el2"><a href="">COMING SOON 2</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu6-el" id="dt-dd-menu6-el3"><a href="">COMING SOON 3</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu6-el dt-dd-last-el" id="dt-dd-menu6-el4"><a href="">COMING SOON 4</a></li>
+			  </ul>	
+		  </div>
+		  <div class="grid-col grid-col-7 grid-row-3-col" id="grid-row-3-col-7">
+		  	<div class="dt-dd-but flex-row" id="dt-dd-cat7-but">CATEGORY7</div>
+			  <ul class="dt-dd-menu flex-column" id="dt-dd-menu-cat7">
+			    <li class="dt-dd-menu-el dt-dd-menu7-el" id="dt-dd-menu7-el1"><a href="">SUB-CAT-1</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu7-el" id="dt-dd-menu7-el2"><a href="">SUB-CAT-1</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu7-el" id="dt-dd-menu7-el3"><a href="">SUB-CAT-1</a></li>
+				<li  class="dt-dd-menu-el dt-dd-menu7-el dt-dd-last-el" id="dt-dd-menu7-el4"><a href="">SUB-CAT-1</a></li>
+			  </ul>		
+		  </div>
+		</div>
+		<!-- end of row 3: desktop category menus-->
+		<!-- row 4: hidden mobile and tablet drop category menus-->
+		<div class="grid-row flex-row" id="row-4">
+		FREE EXPRESS DELIVERY ON ALL ORDERS, THANK THE DOG!
+		</div>
+		<div class="grid-row flex-row" id="row-5">
+		  <div id="form-wrap">
+		    <form id="generatorForm" class="flex-row" method="POST" action="http://localhost/template_generator_val.php" >
+			  <div id="stage-1-1-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 1: Font and Colours</p>
+				  <div class="selection-wrap flex-row">
+				    <div class="an-choice-wrap choice-wrap flex-column" id="serif-wrap">
+				      <p>Abc</p>
+				      <label id="Serif-label" class="font-label form-label">Serif</label>
+					  <input name="font" type="radio" value="Serif" >
+				    </div>
+				    <div class="an-choice-wrap choice-wrap flex-column" id="verdana-wrap">
+				      <p>Abc</p>
+				      <label id="Verdana-label" class="font-label form-label">Verdana</label>
+					  <input name="font" type="radio" value="Verdana" >
+				    </div>
+				    <div class="an-choice-wrap choice-wrap flex-column" id="monospace-wrap">
+				      <p>Abc</p>
+				      <label id="comic-sans-MS-label" class="font-label form-label">Comic Sans</label>
+					  <input name="font" type="radio" value="Comic Sans MS" >
+				    </div>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Select your font style
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>	
+			  </div>
+			  	<div id="stage-1-2-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 1: Font and Colours</p>
+				  <div class="selection-wrap flex-row">
+				    <div class="choice-wrap an-choice-wrap colour-choice flex-column" id="colours-1">
+					  <input class="colour-rad" name="colours" type="radio" value="lightseagreen-dimgrey" >
+				    </div>
+				    <div class="choice-wrap an-choice-wrap colour-choice flex-column" id="colours-2">
+					  <input class="colour-rad" name="colours" type="radio" value="white-blue" >
+				    </div>
+				    <div class="choice-wrap an-choice-wrap colour-choice flex-column" id="colours-3">
+					  <input class="colour-rad" name="colours" type="radio" value="white-silver" >
+				    </div>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Choose your colour scheme
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>	
+			  </div>
+			  <div id="stage-2-1-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 2: Categories and Description</p>
+				  <div class="selection-wrap flex-column" id="cat-selection-wrap">
+				    <div class="choice-wrap cat-choice flex-column" id="cat">
+					  <label>Product's Main Category</label>
+					  <select >
+					    <option class="cat-option" name="category" type="text" value="PS4">PS4</option>
+						<option class="cat-option" name="category" type="text" value="Xbox One">Xbox One</option>
+						<option class="cat-option" name="category" type="text" value="Switch">Nintendo Switch</option>
+						<option class="cat-option" name="category" type="text" value="MP">Multi-platform</option>
+				      </select >
+					</div>
+				    <div class="choice-wrap cat-choice flex-column" id="sub-cat">
+					<label>Product's Sub-Category</label>
+					  <select >
+					    <option class="cat-option" name="sub-cat" type="text" value="Console-Accessories">Console Accessories</option>
+						<option class="cat-option" name="sub-cat" type="text" value="Controller-Accessories">Controller Accessories</option>
+						<option class="cat-option" name="sub-cat" type="text" value="Other">Other</option>
+				      </select>
+					</div>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter the listing categories
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			  <div id="stage-2-2-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 2: Categories and Description</p>
+				  <div class="selection-wrap desc-selection-wrap flex-column" id ="desc-wrap">
+					  <div class="text-editor flex-row" id="text-editor-1">
+					  <div class="text-button" ><i class="material-icons text-icons bold">format_bold</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons italic">format_italic</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons underline">format_underline</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons size">format_size</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons unlist">format_list_bulleted</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons orlist">format_list_numbered</i></div>
+					  </div>
+				  <div class="text-input" rows="8" cols="30" wrap="hard" id="desc" contenteditable="true" spellcheck="false"></div>
+				  <input class="hidden-input" name="desc" type="text"></input>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter the listing categories
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			  <div id="stage-3-1-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 3: Shipping and Returns</p>
+				  <div class="selection-wrap desc-selection-wrap flex-column">
+					  <div class="text-editor flex-row" id="text-editor-2" >
+					  <div class="text-button" ><i class="material-icons text-icons bold">format_bold</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons italic">format_italic</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons underline">format_underline</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons size">format_size</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons unlist">format_list_bulleted</i></div>
+					  <div class="text-button" ><i class="material-icons text-icons orlist">format_list_numbered</i></div>
+					  </div>
+					  <div class="text-input" rows="8" cols="30" wrap="hard" id="ship" contenteditable="true" spellcheck="false"></div>
+					  <input class="hidden-input" name="ship"></input>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter your shipping and returns information
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			  <div id="stage-4-1-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 4: Gallery Images and Hidden Keywords</p>
+				  <div class="selection-wrap desc-selection-wrap flex-column">
+				      <label class="img-label">Main Image</label>
+					  <input class="img-input" name="image-1"></input>
+					  <label class="img-label">Second Image</label>
+					  <input class="img-input" name="image-2"></input>
+					  <label class="img-label">Third Image</label>
+					  <input class="img-input" name="image-3"></input>
+					  <label class="img-label">Fourth Image</label>
+					  <input class="img-input" name="image-4"></input>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter the URLs of the images
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			  <div id="stage-4-2-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 4: Gallery Images and Hidden Keywords</p>
+				  <div class="selection-wrap desc-selection-wrap flex-column">
+				      <label class="desc-label">Enter up to 12 keywords seperated by commas</label>
+					  <textarea class="text-input-ne" rows="16" cols="30" wrap="hard" name="desc"></textarea>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter your keywords
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			  <div id="stage-5-1-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 5: Promote Your Other Listings</p>
+				  <div class="selection-wrap promo-selection-wrap flex-column">
+				      <label class="img-label">Listing 1 Link</label>
+					  <input class="img-input" name="image-1"></input>
+					  <label class="img-label">Listing 1 Image URL</label>
+					  <input class="img-input" name="image-2"></input>
+				      <label class="img-label">Listing 2 Link</label>
+					  <input class="img-input" name="image-1"></input>
+					  <label class="img-label">Listing 2 Image URL</label>
+					  <input class="img-input" name="image-2"></input>
+				  </div>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter the URLs of the images
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			  <div id="stage-5-2-wrap" class="stage-wrap flex-column">
+			    <p class="stage-heading flex-row">Stage 5: Promote Your Other Listings</p>
+				<div class="outer-selection-wrap">
+				  <div class="selection-wrap promo-selection-wrap flex-column" id="promo-desc-wrap">
+				      <label class="desc-label">Listing 1 Description</label>
+					  <textarea class="text-input-ne" rows="8" cols="30" wrap="hard" name="desc"></textarea>
+					  <label class="desc-label">Listing 2 Description</label>
+					  <textarea class="text-input-ne" rows="8" cols="30" wrap="hard" name="desc"></textarea>
+				  </div>
+				</div>
+				<button type="submit" class="submit-button"></button>
+				<div class="stage-control-wrap flex-row">
+				  <span class="control left-control">
+				    <img src="Images/back-arrow.png">
+				  </span>
+				  <p class="stage-text">
+				    Enter the descriptions
+				  </p>
+				  <span class="control right-control">
+				    <img src="Images/forward-arrow.png">
+				  </span>
+				</div>
+			  </div>
+			</form>
+		  </div>
+		</div>
+		<div class="grid-row flex-row" id ="row-6">
+		  <div class="grid-col grid-col-1 flex-row" id="grid-row-6-col-1"><img src="Images/facebook.png" class="sm-icon" id="fb-icon">Facebook</div>  
+		  <div class="grid-col grid-col-2 flex-row" id="grid-row-6-col-2"><img src="Images/twitter.png" class="sm-icon" id="twt-icon">Twitter</div>
+		  <div class="grid-col grid-col-3 flex-row" id="grid-row-6-col-3"><img src="Images/instagram.png" class="sm-icon" id="inst-icon">Instagram</div>
+		  <div class="grid-col grid-col-4 flex-row" id="grid-row-6-col-4"><img src="Images/youtube.png"class="sm-icon" id="yt-icon">Youtube</div>
+		  <div class="grid-col grid-col-5 flex-row" id="grid-row-6-col-5">FOLLOW US ON SOCIAL MEDIA</div>
+		</div>
+		<div class="grid-row flex-row" id ="row-7">
+		  <div class="grid-col grid-col-1 flex-column" id="grid-row-7-col-1">
+		    <a href="contact_us_page.html" class="flex-row">Contact Us</a></div>  
+		  <div class="grid-col grid-col-2" id="grid-row-7-col-2">
+		    <a href="terms_and_conditions_page.html" class="flex-row">Terms and Conditions</a></div>
+		  <div class="grid-col grid-col-2" id="grid-row-7-col-3">
+		    <a href="privacy_policy_page.html" class="flex-row">Privacy Policy</a></div>
+		  <div class="grid-col grid-col-3" id="grid-row-7-col-4">
+		    <a href="shipping_and_delivery_info.html" class="flex-row">Shipping and Delivery Information</a></div>
+		  <div class="grid-col grid-col-4" id="grid-row-7-col-5">
+		    <a href="about_us_page.html" class="flex-row">About Us</a>
+		  </div>
+		</div>
+	</div>
+	<script src="eBaytemplate.js"></script>  
+	</body>
+</html>
+		
+	
